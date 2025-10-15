@@ -5,6 +5,8 @@
     <meta name = "viewport" content="width=device-width, initial-scale=1.0">
     <title>X-TECH Landing</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
 </head>
 <body class="text-gray-800 font-sans">
    <!-- HEADER -->
@@ -37,7 +39,7 @@
   <!-- wrapper chi rong bang nut -->
   <div class="relative inline-block main-cta-button-wrapper">
     <a href="#" class="main-cta-button">
-      <img src="x-tech/give it a try 2.png" class="h-auto w-[340px]">
+      <img src="x-tech/give it a try 2.png" class="h-auto w-auto">
     </a>
 
     <!-- text o ben phai nut -->
@@ -45,7 +47,7 @@
                 max-sm:static max-sm:mt-4 max-sm:translate-y-0 max-sm:ml-0">
       <a href="#features" class="text-[#77aee8] italic text-xl mr-2">or check out the features</a>
       <img src="x-tech/arrow1.png" alt="arrow"
-           class="w-[70px] h-auto rotate-[10deg] translate-y-[10px] opacity-90">
+           class="w-[70px] h-auto rotate-[10deg] translate-y-[10px] opacity-90 ">
     </div>
   </div>
 </div>
@@ -157,32 +159,37 @@
 </section>
 
 <!-- CALL TO ACTION -->
-<section class="text-center pt-2 pb-10">    <!-- Giảm khoảng cách trên từ py-10 xuống pt-4 -->
-  <div class="mt-4 flex justify-center items-center relative"> <!-- Giảm mt từ 12 xuống 6 -->
-    <div class="absolute right-1/2 -translate-x-[200px] -translate-y-[20px] flex items-center">
+<section class="text-center pt-2 pb-10">
+  <div class="relative flex justify-center items-center">
+    <!-- Phần chữ + mũi tên -->
+    <div class="absolute right-1/2 flex items-center justify-end translate-x-[-200px] -translate-y-3">
       <img src="x-tech/arrow2.png"
            alt="arrow"
-           class="w-[100px] h-auto rotate-[3deg] translate-x-[-25px] translate-y-[-30px] opacity-90">
-      <span class="text-[#77aee8] italic text-xl mr-2">...don't wait and</span>
+           class="w-[100px] h-auto rotate-[3deg] -translate-x-2 -translate-y-5 opacity-90">
+      <span class="text-[#77aee8] italic text-xl ml-2">...don't wait and</span>
     </div>
 
-    <div class="relative main-cta-button-wrapper">
-                    <a href="#" class="main-cta-button">
-                        <span class="main-cta-button-text">
-                            <img src="x-tech/give it a try 2.png" class="h-auto w-auto">
-                        </span>
-                    </a>
-    </div>
+    <!-- Nút chính căn giữa trang -->
+    <a href="#" class="main-cta-button">
+      <span class="main-cta-button-text">
+        <img src="x-tech/give it a try 2.png" class="h-auto w-auto" />
+      </span>
+    </a>
   </div>
 </section>
+
+
+
 
 <!-- FOOTER -->
 <footer class="relative bg-gradient-to-b from-[#9a9a9a] to-[#5a5a5a] text-gray-300 pt-10 pb-4 text-sm overflow-hidden">
 
-  <!-- Tạo shadow trên bằng gradient -->
+  <!-- Shadow trên cùng -->
   <div class="absolute top-0 left-0 w-full h-[60px] bg-gradient-to-b from-black/60 via-black/20 to-transparent pointer-events-none"></div>
 
+  <!-- Nội dung chính -->
   <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-8 border-b border-gray-600 pb-6 px-6">
+
     <!-- Contact -->
     <div>
       <h4 class="text-white text-base font-semibold mb-3">Contact</h4>
@@ -191,9 +198,18 @@
       </p>
     </div>
 
-    <!-- Map -->
+    <!-- Google Map -->
     <div class="flex justify-center md:justify-center">
-      <img src="x-tech/Layer 11.png" alt="map" class="rounded-md shadow-md border border-gray-400 w-[220px] h-auto">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.469871823705!2d106.70098487451878!3d10.776889089374154!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752f3fc6b02f5d%3A0x92f187b1da30c1d!2zQ2VudHJhbCBQb3N0LCBI4buTIENow60gTWluaCwgVGjhuqVuaCBwaOG7kSBHacOhLCBIw6AgTuG7mWkgU2jhuqF0!5e0!3m2!1svi!2s!4v1697012345678!5m2!1svi!2s"
+        width="220"
+        height="160"
+        style="border:0;"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+        class="rounded-md shadow-md border border-gray-400"
+      ></iframe>
     </div>
 
     <!-- Design details -->
@@ -204,21 +220,68 @@
       </p>
     </div>
 
-    <!-- Stay connected -->
-    <div class="flex flex-col items-center md:items-start">
-      <h4 class="text-white text-base font-semibold mb-3">Stay connected</h4>
-      <div class="flex gap-2">
-        <img src="x-tech/skype copy.png" class="w-auto h-auto" alt="Skype">
-      </div>
-    </div>
-  </div>
+<!-- Stay connected -->
+<div class="flex flex-col items-center md:items-start">
+  <h4 class="text-white text-base font-semibold mb-3">Stay connected</h4>
+  <div class="flex gap-3">
+    <!-- Skype -->
+    <a href="https://skype.com" target="_blank"
+       class="transition-transform duration-200 hover:-translate-y-[2px]">
+      <img src="x-tech/skype.png" alt="Skype" 
+           class="w-6 h-6 filter grayscale brightness-125 hover:grayscale-0 hover:brightness-100 transition-all duration-200">
+    </a>
 
-  <!-- Bottom line -->
-  <div class="max-w-6xl mx-auto flex justify-between text-gray-400 text-xs pt-3 px-6">
-    <p>Copyright © 2011 - Shegy - All rights reserved.</p>
-    <p>Privacy policy | Regulations</p>
+    <!-- LinkedIn -->
+    <a href="https://linkedin.com" target="_blank"
+       class="transition-transform duration-200 hover:-translate-y-[2px]">
+      <img src="x-tech/linkedin.png" alt="LinkedIn" 
+           class="w-6 h-6 filter grayscale brightness-125 hover:grayscale-0 hover:brightness-100 transition-all duration-200">
+    </a>
+
+    <!-- Facebook -->
+    <a href="https://facebook.com" target="_blank"
+       class="transition-transform duration-200 hover:-translate-y-[2px]">
+      <img src="x-tech/facebook.png" alt="Facebook" 
+           class="w-6 h-6 filter grayscale brightness-125 hover:grayscale-0 hover:brightness-100 transition-all duration-200">
+    </a>
+
+    <!-- Digg -->
+    <a href="https://digg.com" target="_blank"
+       class="transition-transform duration-200 hover:-translate-y-[2px]">
+      <img src="x-tech/digg.png" alt="Digg" 
+           class="w-6 h-6 filter grayscale brightness-125 hover:grayscale-0 hover:brightness-100 transition-all duration-200">
+    </a>
+
+    <!-- Tumblr -->
+    <a href="https://www.deviantart.com" target="_blank"
+       class="transition-transform duration-200 hover:-translate-y-[2px]">
+      <img src="x-tech/deviantart.png" alt="Tumblr" 
+           class="w-6 h-6 filter grayscale brightness-125 hover:grayscale-0 hover:brightness-100 transition-all duration-200">
+    </a>
+
+    <!-- Twitter -->
+    <a href="https://twitter.com" target="_blank"
+       class="transition-transform duration-200 hover:-translate-y-[2px]">
+      <img src="x-tech/twitter.png" alt="Twitter" 
+           class="w-6 h-6 filter grayscale brightness-125 hover:grayscale-0 hover:brightness-100 transition-all duration-200">
+    </a>
   </div>
+</div>
+</div>
+
 </footer>
-
+<!-- Bottom line -->
+<div class="bg-[#4a4a4a] border-t border-[#3a3a3a] w-full">
+  <div class="max-w-6xl mx-auto flex justify-between items-center text-gray-300 text-[13px] px-6 md:px-12 py-4 font-sans">
+    <p class="text-sm tracking-tight italic opacity-90">
+      © 2011 - Shegy - All rights reserved.
+    </p>
+    <p class="text-sm opacity-90 text-right">
+      <a href="#" class="hover:text-white transition-colors">Privacy policy</a>
+      <span class="mx-1 text-gray-400">|</span>
+      <a href="#" class="hover:text-white transition-colors">Regulations</a>
+    </p>
+  </div>
+</div>
 </body>
 </html>
