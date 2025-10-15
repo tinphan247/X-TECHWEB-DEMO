@@ -7,43 +7,49 @@
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body class="text-gray-800 font-sans">
-    <!--header-->
-    <header class="flex justify-between items-center px-10 py-5 bg-white shadow">
-        <h1 class="flex items-center gap-2 text-sm font-bold text-gray-800">
-            <img src="x-tech/landing logo.png" alt="X-Tech Logo" class="h-8 w-auto">
-            <span class="text-gray-600">X-TECH</span>
-            <span class="text-gray-300">LANDING</span>
+   <!-- HEADER -->
+      <header class="flex flex-col sm:flex-row justify-between items-center px-6 py-4 bg-white shadow-md">
+        <!-- Logo + text -->
+        <h1 class="flex items-center gap-2 text-base font-bold text-gray-800 mb-2 sm:mb-0">
+          <img src="x-tech/landing logo.png" alt="X-Tech Logo" class="h-8 w-auto">
+          <span class="text-gray-600">X-TECH</span>
+          <span class="text-gray-400">LANDING</span>
         </h1>
-        <div class="text-gray-600 text-sm">
-            CALL NOW! <span class="font-semibold text black">1-800-123-4567
-        </div>
-    </header>
-    <!-- HERO -->
-     <section class="text-center py-10">
-        <h2 class="text-3xl font-bold leading-tight mb-6">
-        The perfect way to convert your traffic into sales.
-        </h2>
-        <img src="x-tech/Group 4 copy.png" alt="Landing Preview" class="mx-auto w-3/4 max-w-3xl shadow-lg mb-10 rounded-lg">
-    
-        <div class="mt-12 flex justify-center">
-                <div class="relative main-cta-button-wrapper">
-                    <a href="#" class="main-cta-button">
-                        <span class="main-cta-button-text">
-                            <img src="x-tech/give it a try 2.png" class="h-auto w-auto">
-                        </span>
-                    </a>
 
-                    <div class="absolute left-full top-1/2 -translate-y-12 ml-8 whitespace-nowrap flex items-center">
-                        <a href="#features" class="text-[#77aee8] italic text-xl mb-6">or check out the
-                            features</a>
-                        <i data-lucide="redo" class="features-link-arrow text-[#77aee8]"></i>
-                        <img src="x-tech/arrow1.png"
-                        alt="arrow"
-                        class="ml-2 w-[70px] h-auto rotate-[10deg] translate-y-[35px] opacity-90">
-                    </div>
-                </div>
-            </div>
-  </section>
+        <!-- Call Now -->
+        <div class="text-gray-600 text-sm text-center sm:text-right">
+          CALL NOW! <span class="font-semibold text-black">1-800-123-4567</span>
+        </div>
+      </header>
+
+    <!-- HERO -->
+    <section class="text-center py-10">
+  <h2 class="text-3xl font-bold leading-tight mb-6">
+    The perfect way to convert your traffic into sales.
+  </h2>
+
+  <img src="x-tech/Group 4 copy.png"
+       alt="Landing Preview"
+       class="mx-auto w-3/4 max-w-3xl shadow-lg mb-10 rounded-lg">
+
+  <!-- Nút chính -->
+  <div class="mt-12 flex justify-center">
+  <!-- wrapper chi rong bang nut -->
+  <div class="relative inline-block main-cta-button-wrapper">
+    <a href="#" class="main-cta-button">
+      <img src="x-tech/give it a try 2.png" class="h-auto w-[340px]">
+    </a>
+
+    <!-- text o ben phai nut -->
+    <div class="absolute left-full top-1/2 -translate-y-1/2 ml-6 flex items-center whitespace-nowrap
+                max-sm:static max-sm:mt-4 max-sm:translate-y-0 max-sm:ml-0">
+      <a href="#features" class="text-[#77aee8] italic text-xl mr-2">or check out the features</a>
+      <img src="x-tech/arrow1.png" alt="arrow"
+           class="w-[70px] h-auto rotate-[10deg] translate-y-[10px] opacity-90">
+    </div>
+  </div>
+</div>
+</section>
 
  <!-- FEATURES -->
 <section class="py-5 bg-white">
@@ -170,9 +176,8 @@
   </div>
 </section>
 
-
 <!-- FOOTER -->
-<footer class="relative bg-gradient-to-b from-[#505050] to-[#2f2f2f] text-gray-300 pt-10 pb-4 text-sm overflow-hidden">
+<footer class="relative bg-gradient-to-b from-[#9a9a9a] to-[#5a5a5a] text-gray-300 pt-10 pb-4 text-sm overflow-hidden">
 
   <!-- Tạo shadow trên bằng gradient -->
   <div class="absolute top-0 left-0 w-full h-[60px] bg-gradient-to-b from-black/60 via-black/20 to-transparent pointer-events-none"></div>
@@ -214,9 +219,6 @@
     <p>Privacy policy | Regulations</p>
   </div>
 </footer>
-
-
-
 
 </body>
 </html>
